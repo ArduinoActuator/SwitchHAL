@@ -13,7 +13,7 @@ enum SwitchType {
 enum SwitchFunctionReturnValue {
   FUNCTION_UNSUPPORTED = 1,
   FUNCTION_SUCCESS,
-  FUNCTION_FAIL,
+  FUNCTION_FAIL
 };
 
 class Switch {
