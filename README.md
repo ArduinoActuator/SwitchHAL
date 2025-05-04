@@ -14,8 +14,8 @@
 - Adafruit Unified Sensor Driver - [https://github.com/adafruit/Adafruit_Sensor][AdafruitUSD]
 -->
 
-<!-- 以下は，外部リンクの定義 -->
-[GroveRedLED]:https://jp.seeedstudio.com/Grove-Red-LED.html <!-- Grove LED 赤 Arduino用 -->
+<!-- Grove LED 赤 Arduino用 -->
+[GroveRedLED]:https://jp.seeedstudio.com/Grove-Red-LED.html 
 
 
 
