@@ -6,23 +6,25 @@ Switch::Switch(uint8_t pin, SwitchType type):
   _type(type)
 {}
 
-void Switch::begin(void) {
+SwitchFunctionReturnValue Switch::begin(void) {
   pinMode(_pin, OUTPUT);
-  off();
+  return off();
 }
 
-void Switch::on(void) {
+SwitchFunctionReturnValue Switch::on(void) {
   if (_type == SWITCH_TYPE_PULL_UP) {
     digitalWrite(_pin, HIGH);
   } else {
     digitalWrite(_pin, LOW);
   }
+  return SW_FUNCTION_SUCCESS;
 }
 
-void Switch::off(void) {
+SwitchFunctionReturnValue Switch::off(void) {
   if (_type == SWITCH_TYPE_PULL_UP) {
     digitalWrite(_pin, LOW);
   } else {
     digitalWrite(_pin, HIGH);
   }
+  return SW_FUNCTION_SUCCESS;
 }
