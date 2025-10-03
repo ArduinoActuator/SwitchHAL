@@ -2,15 +2,18 @@
 /*
  * NanoやMKRをClassic (UNO)のシールドを使えるようにするための変換基板を使うか否かの選択
  */
-#define USE_CONVERTER
+//#define USE_CONVERTER
 
 /*
  * ピン番号の定義
  */
 #ifdef USE_CONVERTER
-#define SWITCH_PIN DIGITAL_5
+#define SWITCH_PIN DIGITAL_6
 #else /* USE_CONVERTER */
-#define SWITCH_PIN 5
+// MKR
+//#define SWITCH_PIN D4
+// other
+#define SWITCH_PIN D6
 #endif /* USE_CONVERTER */
 
 #include "SwitchHAL.h"
