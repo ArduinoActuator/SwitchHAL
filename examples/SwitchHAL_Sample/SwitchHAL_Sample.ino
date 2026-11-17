@@ -11,7 +11,7 @@ void setup() {
 
 void loop() {
   sw.on();
-  delay(10000);
+  delay(3000);
   sw.off();
-  delay(10000);
+  delay(3000);
 }
